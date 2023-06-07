@@ -3,6 +3,6 @@
 
 ##script
 #!/bin/bash
-ls -l
+ls -A
 
 end script

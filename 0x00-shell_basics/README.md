@@ -17,4 +17,10 @@ display current directory long format with user and group and hidden files
 ls -aln
 
 ###############################################################################
+6-firstdirectory
 
+create a script created a direct full name including tmp/and the name of the directory
+#!bin/bash
+mkdir -p /tmp/my_first_directory
+
+################################################################################

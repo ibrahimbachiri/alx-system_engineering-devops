@@ -6,3 +6,15 @@
 ls -al
 
 end script
+
+#############################################################################
+
+5-listfilesdigitonly
+
+display current directory long format with user and group and hidden files
+
+#!/bin/bash
+ls -aln
+
+###############################################################################
+

@@ -1,0 +1,16 @@
+
+
+# Repo Name   alx-system_engineering-devops
+
+
+##This Repo Contain Directory That Contain files in Which We Have Some Scripts To Excute the current path
+
+
+##Script Example
+
+pth=$(pwd)
+
+echo$(pth)
+
+End Of The Example Script
+

@@ -24,3 +24,9 @@ create a script created a direct full name including tmp/and the name of the dir
 mkdir -p /tmp/my_first_directory
 
 ################################################################################
+
+7-movethatfile
+
+move file from tmp to /tmp/my_first_directory
+#!/bin/bash
+mv betty /tmp/my_first_directory

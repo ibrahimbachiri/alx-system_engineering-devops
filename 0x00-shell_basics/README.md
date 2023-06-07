@@ -1,8 +1,8 @@
 ##Repo name alx-system_engineering_devops
-##this repo contain a file that describe the script which excute the current path pwd
+##this repo contain a file that display the content list of your  current directory
 
 ##script
 #!/bin/bash
-pwd
+ls -l
 
 end script

@@ -1,10 +1,10 @@
 ##Repo name alx-system_engineering_devops
-##this repo contain a file name 3-listfiles describe how to display the current directory contents in long format
+##this repo contain a file name 1-listit describe how to display the current directory 
 
 ##script
 
 #!/bin/bash
 
-ls -l
+ls
 
 end script

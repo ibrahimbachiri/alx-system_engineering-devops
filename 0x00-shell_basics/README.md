@@ -1,8 +1,10 @@
 ##Repo name alx-system_engineering_devops
-##this repo contain a file describe how to change the working directory to the users home
+##this repo contain a file name 3-listfiles describe how to display the current directory contents in long format
 
 ##script
+
 #!/bin/bash
-cd -
+
+ls -l
 
 end script

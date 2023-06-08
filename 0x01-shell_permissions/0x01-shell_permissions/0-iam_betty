@@ -1,2 +1,4 @@
-#!/bin/bash
-chown  betty hello
+#!bin/bash
+sudo betty -u betty -i
+
+

@@ -1,11 +1,5 @@
 #!/bin/bash
+find . -maxdepth 1 -type f -name f -name "*.html" -newer "$(dirname "$(pwd)")" -exec cp -u -t "$(dirname "$(pwd)")"{} +
 
-parent_dir=$(dirname "$(pwd)")
-for file in *.html
-do
-    if [ ! -e "$parent_dir/$file" ] || [ "$file" -nt "$parent_dir/$file" ]
-    then
-        cp "$file" "$parent_dir/"
-    fi
-done
+
 

@@ -1,0 +1,3 @@
+#!/bin/bash
+oller_mode=$(stat -c "%" olleh)
+chmod $olleh_mode  hello

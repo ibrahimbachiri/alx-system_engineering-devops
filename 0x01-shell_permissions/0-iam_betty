@@ -1,2 +1,2 @@
 #!/bin/bash
-sudo betty -u betty -i
+su -c 'exit' betty

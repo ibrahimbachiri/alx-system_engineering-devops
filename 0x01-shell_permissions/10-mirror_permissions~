@@ -1,0 +1,3 @@
+#!/bin/bash
+mode=$(st -c %a olleh)
+chmod "$mode" hello

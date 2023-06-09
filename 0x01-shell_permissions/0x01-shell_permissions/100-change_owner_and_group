@@ -1,2 +1,2 @@
-#!/bin/basho
+#!/bin/bash
 chown  vincent:staff *

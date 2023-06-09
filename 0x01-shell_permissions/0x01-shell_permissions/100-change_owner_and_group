@@ -1,2 +1,2 @@
-#!/bin/bash
-sudo chown  vincent:staff ./*
+#!/bin/basho
+chown  vincent:staff *

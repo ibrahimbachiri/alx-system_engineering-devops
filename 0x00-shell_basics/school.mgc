@@ -1,3 +1,2 @@
 #!/bin/bash
-0 string SCHOOL: text/plain
-
+file -m school.mgc *

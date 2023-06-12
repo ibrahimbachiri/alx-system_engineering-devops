@@ -38,3 +38,12 @@ cat /etc/passwd /etc/hosts
 #!/bin/bash
 
 tail -n 10 /etc/passwd
+
+
+
+####################################
+
+#this script will display first 10 lines
+
+#!/bin/bash
+head -n 10 /etc/passwd

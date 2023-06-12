@@ -1,5 +1,5 @@
-this script will will prompt 'Hello, World' to the standard output
+this script display Confused Smiley
 
 #!/bin/bash
 
-echo "Hello, World"
+echo "\"(Ôo)'"

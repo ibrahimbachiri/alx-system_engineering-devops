@@ -1,0 +1,2 @@
+y#!/bin/bash
+ls -lt | grep -v '^d' | head -n 10

@@ -13,3 +13,9 @@ this script display Confused Smiley
 echo "\"(Ôo)'"
 
 ####################################
+
+#this script will display all content file
+
+#!/bin/bash
+
+cat /etc/passwd

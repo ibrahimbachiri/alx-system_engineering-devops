@@ -56,3 +56,13 @@ head -n 10 /etc/passwd
 #!/bin/bash
 
 head -n 3 iacta | tail -n 1
+
+####################################
+
+9- 9-duplicate_last_line
+
+#this script will duplicate last  line of iacta file
+
+#!/bin/bash
+
+tail -n 1 iacta >> iacta 

@@ -19,3 +19,12 @@ echo "\"(Ôo)'"
 #!/bin/bash
 
 cat /etc/passwd
+
+
+####################################
+
+#this script will display Data base for the user & Data base for the local Host
+
+#!/bin/bash
+
+cat /etc/passwd /etc/hosts

@@ -28,3 +28,13 @@ cat /etc/passwd
 #!/bin/bash
 
 cat /etc/passwd /etc/hosts
+
+
+
+####################################
+
+#this script will display last 10 lines
+
+#!/bin/bash
+
+tail -n 10 /etc/passwd

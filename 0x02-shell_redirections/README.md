@@ -83,4 +83,4 @@ find . -type f -name "*.js" -delete
 
 this script will find  all directories and subdirectories in the current directory
 #!/bin/bash
-find . mindepth f -type d | wc -l  
+find . -mindepth 1 -type d | wc -l  

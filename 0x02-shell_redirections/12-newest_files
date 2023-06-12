@@ -1,2 +1,2 @@
 #!/bin/bash
-ls -lt | head -n 10 | sort -n
+echo "12 11 10 9 8 7 6 " | ls -lt | head -n 10 | sort -n

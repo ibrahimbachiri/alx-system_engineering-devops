@@ -65,4 +65,22 @@ head -n 3 iacta | tail -n 1
 
 #!/bin/bash
 
-tail -n 1 iacta >> iacta 
+tail -n 1 iacta >> iacta
+
+####################################
+
+10-no_more_js
+
+
+this script will delete all regular  files with the extension .js
+
+#!/bin/bash
+find . -type f -name "*.js" -delete
+
+####################################
+
+11-directories
+
+this script will find  all directories and subdirectories in the current directory
+#!/bin/bash
+find . mindepth f -type d | wc -l  

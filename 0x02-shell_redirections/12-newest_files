@@ -1,3 +1,2 @@
 #!/bin/bash
-echo "0-hello_world  11-directories   1-confused_smiley  3-twofiles   5-firstlines  7-file       9-duplicate_last_line  ls_cwd_content
-10-no_more_js  12-n
+echo ls -lt | tail -n +2 | head -n 10 | cut -d ' ' -f 9-

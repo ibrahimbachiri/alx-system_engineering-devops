@@ -46,4 +46,13 @@ tail -n 10 /etc/passwd
 #this script will display first 10 lines
 
 #!/bin/bash
+
 head -n 10 /etc/passwd
+
+####################################
+
+#this script will display thuird line of iacta file
+
+#!/bin/bash
+
+head -n 3 iacta | tail -n 1

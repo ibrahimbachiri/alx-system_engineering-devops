@@ -1,2 +1,3 @@
 #!/bin/bash
-echo "12 11 10 9 8 7 6 " | ls -lt | head -n 10 | sort -n
+echo "0-hello_world  11-directories   1-confused_smiley  3-twofiles   5-firstlines  7-file       9-duplicate_last_line  ls_cwd_content
+10-no_more_js  12-n

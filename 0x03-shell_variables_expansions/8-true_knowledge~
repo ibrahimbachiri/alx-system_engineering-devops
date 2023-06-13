@@ -1,0 +1,2 @@
+#!/bin/bash
+echo addition=$((128 + $TRUEKNOWLEDGE))

@@ -1,3 +1,7 @@
 #!/usr/bin/env bash
+
+# Get the PID of the current script
 PID=$$
+
+# Display the PID to the console
 echo "My PID is: $PID"

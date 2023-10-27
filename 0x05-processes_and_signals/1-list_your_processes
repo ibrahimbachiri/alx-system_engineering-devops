@@ -1,0 +1,27 @@
+#!/bin/bash
+
+# Get a list of all running processes
+processes=$(ps -A -o pid,user,ppid,cmd)
+
+# Create a tree structure to store the processes
+tree=""
+while read -r pid user ppid cmd; do
+  # If the current process has no parent, it is the root of the tree
+  if [[ $ppid -eq 1 ]]; then
+    tree="$tree$pid ($cmd)\n"
+  else
+    # Find the parent process in the tree
+    parent_node=$(grep -P "^$ppid" <<< "$tree")
+
+    # If the parent process is not found, create a new node for it
+    if [[ -z $parent_node ]]; then
+      tree="$tree$ppid ($cmd)\n"
+    fi
+
+    # Add the current process as a child of the parent process
+    tree=$(sed -i "/^$ppid/a $pid ($cmd)" <<< "$tree")
+  fi
+done <<< "$processes"
+
+# Display the tree
+echo -e "$tree"

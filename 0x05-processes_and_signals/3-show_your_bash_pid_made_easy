@@ -1,0 +1,4 @@
+#!/usr/bin/env bash
+# This script disply the pid
+# cannot use p s
+pgrep -l bash

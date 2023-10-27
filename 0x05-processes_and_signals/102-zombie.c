@@ -19,7 +19,7 @@ int infinite_while(void)
 
 /**
  * main - entry point for program
- * Description - creates five zombie processes.
+ * Description - create five zombie processes.
  *
  * Return: always 0
  */

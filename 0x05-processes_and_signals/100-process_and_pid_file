@@ -1,10 +1,23 @@
 #!/usr/bin/env bash
-# This script displays messages when recieving signals
+# This script displays messages when receiving signals
 
-echo $$ > /var/run/myscript.pid
-trap 'echo "I hate the Kill command"; rm -rf /var/run/myscript.pid; exit' SIGTERM
-trap 'echo "Y U no love me?!"' SIGINT
-trap 'rm -rf /var/run/myscript.pid; exit' SIGQUIT
+pidfile="/var/run/myscript.pid"
+
+# Function to clean up and exit
+cleanup() {
+    echo "Cleaning up and exiting"
+    rm -f "$pidfile"
+    exit
+}
+
+# Create a PID file
+echo $$ > "$pidfile"
+
+# Trap signals
+trap 'echo "I hate the Kill command"; cleanup' SIGTERM
+trap 'echo "Y U no love me?!"; cleanup' SIGINT
+trap 'cleanup' SIGQUIT
+
 while :
 do
     echo "To infinity and beyond"

@@ -1,13 +1,14 @@
 #!/usr/bin/env bash
-# This script is displaying "Holberton School" 10 times
-i=10
-while [ "$i" -gt 0 ]
+# Displays 'Best School'. Displays Hi on the 9th iteration
+
+index=0
+
+while [ $index -lt 10 ]
 do
-    echo "Holberton School"
-    if [ "$i" -eq 2 ]
-    then
-        echo "Hi"
-    fi
-    i=$((i - 1))
+  if [ $index -eq 9 ]
+  then
+    echo "Hi"
+  fi
+  echo "Best School"
+  (( index++ ))
 done
-i=$i

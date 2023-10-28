@@ -1,25 +1,24 @@
 #!/usr/bin/env bash
-# This script displays messages when receiving signals
+# Does the following:
+#   Create a file /var/run/myscript.pid containing the script PID.
+#   Displays "To infinity and beyond" indefinitely
+#   Displays "I hate the kill command" upon receiving a SIGTERM
+#   Displays "Y U no love me?!" upon receiving a SIGINT
+#   Deletes the file /var/run/myscript.pid and terminates upon
+#+  receiving a SIGQUIT or SIGTERM.
 
-pidfile="/var/run/myscript.pid"
-
-# Function to clean up and exit
-cleanup() {
-    echo "Cleaning up and exiting"
-    rm -f "$pidfile"
-    exit
+terminator() {
+  rm /var/run/myscript.pid
+  exit
 }
 
-# Create a PID file
-echo $$ > "$pidfile"
+echo "$$" > /var/run/myscript.pid
 
-# Trap signals
-trap 'echo "I hate the Kill command"; cleanup' SIGTERM
-trap 'echo "Y U no love me?!"; cleanup' SIGINT
-trap 'cleanup' SIGQUIT
-
-while :
+while true
 do
-    echo "To infinity and beyond"
-    sleep 2
+  echo "To infinity and beyond"
+  sleep 2
+  trap 'echo "Y U no love me?!"' SIGINT
+  trap 'echo "I hate the kill command" && terminator' SIGTERM
+  trap 'terminator' SIGQUIT
 done
